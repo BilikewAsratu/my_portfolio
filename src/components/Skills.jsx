@@ -1,53 +1,48 @@
 import { motion } from 'framer-motion';
-import {
-  SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss,
-  SiPhp, SiExpress, SiJava, SiPython, SiCplusplus,
-  SiGit, SiGithub, SiPostman, SiMicrosoftoffice
-} from 'react-icons/si';
 
 const skillCategories = [
   {
     title: 'Frontend',
     items: [
-      { name: 'HTML5', icon: <SiHtml5 className="text-orange-500" /> },
-      { name: 'CSS3', icon: <SiCss3 className="text-blue-500" /> },
-      { name: 'JavaScript', icon: <SiJavascript className="text-yellow-400" /> },
-      { name: 'React', icon: <SiReact className="text-cyan-400" /> },
-      { name: 'Tailwind', icon: <SiTailwindcss className="text-teal-400" /> },
+      { name: 'HTML5', icon: '🟧' },
+      { name: 'CSS3', icon: '🟦' },
+      { name: 'JavaScript', icon: '🟨' },
+      { name: 'React', icon: '⚛️' },
+      { name: 'Tailwind', icon: '🌊' },
     ],
   },
   {
     title: 'Backend',
     items: [
-      { name: 'PHP', icon: <SiPhp className="text-indigo-400" /> },
-      { name: 'Express.js', icon: <SiExpress className="text-gray-300" /> },
-      { name: 'REST APIs', icon: <span className="text-sm font-mono">API</span> },
+      { name: 'PHP', icon: '🐘' },
+      { name: 'Express.js', icon: '🚂' },
+      { name: 'REST APIs', icon: '🔗' },
     ],
   },
   {
     title: 'Languages',
     items: [
-      { name: 'Java', icon: <SiJava className="text-red-500" /> },
-      { name: 'Python', icon: <SiPython className="text-yellow-300" /> },
-      { name: 'C++', icon: <SiCplusplus className="text-blue-600" /> },
+      { name: 'Java', icon: '☕' },
+      { name: 'Python', icon: '🐍' },
+      { name: 'C++', icon: '⚙️' },
     ],
   },
   {
     title: 'Tools & Platforms',
     items: [
-      { name: 'Git', icon: <SiGit className="text-orange-600" /> },
-      { name: 'GitHub', icon: <SiGithub className="text-white" /> },
-      { name: 'Postman', icon: <SiPostman className="text-orange-500" /> },
-      { name: 'VS Code', icon: <span className="text-blue-400 font-bold">&lt;/&gt;</span> },
+      { name: 'Git', icon: '🔀' },
+      { name: 'GitHub', icon: '🐙' },
+      { name: 'Postman', icon: '📮' },
+      { name: 'VS Code', icon: '💻' },
     ],
   },
   {
     title: 'Office & Automation',
     items: [
-      { name: 'Excel (Advanced)', icon: <SiMicrosoftoffice className="text-green-600" /> },
-      { name: 'Word', icon: <SiMicrosoftoffice className="text-blue-500" /> },
-      { name: 'PowerPoint', icon: <SiMicrosoftoffice className="text-red-500" /> },
-      { name: 'Power Automate', icon: <span className="text-sm">⚡</span> },
+      { name: 'Excel (Advanced)', icon: '📊' },
+      { name: 'Word', icon: '📄' },
+      { name: 'PowerPoint', icon: '📽️' },
+      { name: 'Power Automate', icon: '⚡' },
     ],
   },
 ];
