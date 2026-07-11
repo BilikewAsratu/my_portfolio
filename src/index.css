@@ -1,9 +1,78 @@
 @import "tailwindcss";
 
-/* Custom smooth scroll */
-html {
-  scroll-behavior: smooth;
+/* Base smooth theme transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
-body {
-  @apply bg-gray-950 text-gray-100;
+
+/* Default fallback (dark) */
+:root {
+  --color-bg: #030712;        
+  --color-bg-secondary: #111827; 
+  --color-text: #f3f4f6;      
+  --color-text-secondary: #9ca3af; 
+  --color-accent: #3b82f6;    
+  --color-accent-hover: #2563eb;
+  --color-border: #1f2937;    
+  --color-card: rgba(17,24,39,0.8);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-bg: #030712;
+  --color-bg-secondary: #111827;
+  --color-text: #f3f4f6;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --color-border: #1f2937;
+  --color-card: rgba(17,24,39,0.8);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-text: #111827;
+  --color-text-secondary: #4b5563;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #e5e7eb;
+  --color-card: rgba(255,255,255,0.9);
+}
+
+/* Green theme */
+[data-theme="green"] {
+  --color-bg: #022c22;         /* deep emerald */
+  --color-bg-secondary: #064e3b;
+  --color-text: #d1fae5;
+  --color-text-secondary: #6ee7b7;
+  --color-accent: #10b981;    /* emerald-500 */
+  --color-accent-hover: #059669;
+  --color-border: #047857;
+  --color-card: rgba(6,78,59,0.8);
+}
+
+/* Blue/Ocean theme */
+[data-theme="blue"] {
+  --color-bg: #0c1929;
+  --color-bg-secondary: #1e3a5f;
+  --color-text: #e0f2fe;
+  --color-text-secondary: #7dd3fc;
+  --color-accent: #0ea5e9;
+  --color-accent-hover: #0284c7;
+  --color-border: #1e3a5f;
+  --color-card: rgba(30,58,95,0.8);
+}
+
+/* Purple theme */
+[data-theme="purple"] {
+  --color-bg: #1e0a2e;
+  --color-bg-secondary: #3b0764;
+  --color-text: #f3e8ff;
+  --color-text-secondary: #c084fc;
+  --color-accent: #a855f7;
+  --color-accent-hover: #9333ea;
+  --color-border: #581c87;
+  --color-card: rgba(59,7,100,0.8);
 }

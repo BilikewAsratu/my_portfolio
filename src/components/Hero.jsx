@@ -5,22 +5,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20"
+      className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 bg-[var(--color-bg)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <p className="text-blue-400 text-sm font-mono mb-4">
+        <p className="text-[var(--color-accent)] text-sm font-mono mb-4">
           Hello, I'm
         </p>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-          <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[var(--color-accent)] to-emerald-400 bg-clip-text text-transparent">
             Your Full Name
           </span>
         </h1>
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-[var(--color-text-secondary)] mb-10 leading-relaxed">
           Full‑Stack Developer & Business Workflow Expert — I turn complex
           data into elegant, automated solutions.
         </p>
@@ -28,13 +28,13 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-colors"
+            className="px-6 py-3 bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] rounded-full font-medium transition-colors text-white"
           >
             View My Work
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 border border-gray-600 hover:border-gray-400 rounded-full font-medium transition-colors"
+            className="px-6 py-3 border border-[var(--color-border)] hover:border-[var(--color-text-secondary)] rounded-full font-medium transition-colors text-[var(--color-text)]"
           >
             Get In Touch
           </a>
@@ -42,7 +42,7 @@ const Hero = () => {
 
         <div className="mt-20 animate-bounce">
           <a href="#about" aria-label="Scroll down">
-            <FiArrowDown className="text-gray-500 text-2xl" />
+            <FiArrowDown className="text-[var(--color-text-secondary)] text-2xl" />
           </a>
         </div>
       </motion.div>
