@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import invoice_gen from '../assets/img/invoice_gen.png';
+import sales from '../assets/img/sales_dashboard.png';
+import task from '../assets/img/task_manager.jpg';
 
 const projects = [
   {
@@ -9,7 +12,7 @@ const projects = [
     tech: ['React', 'Tailwind', 'Chart.js', 'PHP', 'Excel'],
     live: 'https://your-demo-link.com',
     github: 'https://github.com/yourusername/sales-dashboard',
-    image: '/project1.jpg',
+    image: sales,
   },
   {
     title: 'Invoice Generator',
@@ -18,7 +21,7 @@ const projects = [
     tech: ['React', 'PHP', 'PhpWord', 'Tailwind'],
     live: 'https://invoice-demo.com',
     github: 'https://github.com/yourusername/invoice-gen',
-    image: '/project2.jpg',
+    image: invoice_gen,
   },
   {
     title: 'Task Manager API',
@@ -27,7 +30,7 @@ const projects = [
     tech: ['PHP', 'MySQL', 'JWT', 'Postman'],
     live: null,
     github: 'https://github.com/yourusername/task-api',
-    image: '/project3.jpg',
+    image: task,
   },
 ];
 

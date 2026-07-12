@@ -1,37 +1,57 @@
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiGlobe, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { label } from 'framer-motion/client';
+import { FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FiMail, FiPhone, FiGlobe, FiGithub, FiLinkedin, FiFacebook } from 'react-icons/fi';
 
 const contactInfo = [
   {
     icon: <FiMail />,
     label: 'Email',
-    value: 'you@example.com',
-    href: 'mailto:you@example.com',
+    value: 'bilikew80@gmail.com',
+    href: 'bilikew80@gmail.com',
   },
   {
     icon: <FiPhone />,
     label: 'Phone',
-    value: '+1 (234) 567-890',
-    href: 'tel:+1234567890',
+    value: '+251 968 405-650',
+    href: 'tel:+251968405650',
   },
   {
     icon: <FiGlobe />,
     label: 'Website',
-    value: 'www.yourname.dev',
-    href: 'https://www.yourname.dev',
+    value: 'https://bilikew-asratu.vercel.app',
+    href: 'https://bilikew-asratu.vercel.app/',
   },
   {
     icon: <FiGithub />,
     label: 'GitHub',
-    value: 'github.com/yourusername',
-    href: 'https://github.com/yourusername',
+    value: 'https://github.com/BilikewAsratu',
+    href: 'https://github.com/BilikewAsratu',
   },
   {
     icon: <FiLinkedin />,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/yourusername',
-    href: 'https://linkedin.com/in/yourusername',
+    value: 'https://www.linkedin.com/in/bilikew-asratu/',
+    href: 'https://www.linkedin.com/in/bilikew-asratu/',
   },
+  {
+    icon: <FiFacebook />,
+    label: 'Facebook',
+    value: 'https://web.facebook.com/BilikewAsratu',
+    href: 'https://web.facebook.com/BilikewAsratu',
+  },
+  {
+    icon: <FaYoutube />,
+    label: 'YouTube',
+    value: 'https://www.youtube.com/@base_bas',
+    href: 'https://www.youtube.com/@base_bas',
+  },
+  {
+    icon: <FaTiktok />,
+    label: 'TikTok',
+    value: 'https://www.tiktok.com/bilikew_asratu',
+    href: 'https://www.tiktok.com/bilikew_asratu',
+  }
 ];
 
 const Contact = () => {
