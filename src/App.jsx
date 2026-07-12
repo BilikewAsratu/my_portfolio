@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] font-sans selection:bg-[var(--color-accent)]/30">
+    <div style={{ backgroundColor: 'var(--bg-primary)' }}>
       <Navbar />
       <Hero />
       <About />
