@@ -15,7 +15,7 @@ const About = () => {
           style={{ borderColor: 'var(--border-color)' }}
         >
           <img
-            src="../src/assets/img/my_photo.svg"
+            src="../src/assets/img/my_photo.jpg"
             alt="Bilikew Asratu"
             className="w-full h-full object-cover"
           />
