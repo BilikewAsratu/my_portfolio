@@ -1,78 +1,103 @@
 @import "tailwindcss";
 
-/* Base smooth theme transitions */
-* {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Default fallback (dark) */
-:root {
-  --color-bg: #030712;        
-  --color-bg-secondary: #111827; 
-  --color-text: #f3f4f6;      
-  --color-text-secondary: #9ca3af; 
-  --color-accent: #3b82f6;    
-  --color-accent-hover: #2563eb;
-  --color-border: #1f2937;    
-  --color-card: rgba(17,24,39,0.8);
-}
-
-/* Dark theme */
-[data-theme="dark"] {
-  --color-bg: #030712;
-  --color-bg-secondary: #111827;
-  --color-text: #f3f4f6;
-  --color-text-secondary: #9ca3af;
-  --color-accent: #3b82f6;
-  --color-accent-hover: #2563eb;
-  --color-border: #1f2937;
-  --color-card: rgba(17,24,39,0.8);
+/* Default dark theme */
+.theme-dark {
+  --bg-primary: #030712;
+  --bg-secondary: #111827;
+  --bg-card: rgba(17, 24, 39, 0.5);
+  --border-color: #1f2937;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --nav-bg: rgba(3, 7, 18, 0.8);
+  --hover-bg: #374151;
 }
 
 /* Light theme */
-[data-theme="light"] {
-  --color-bg: #ffffff;
-  --color-bg-secondary: #f9fafb;
-  --color-text: #111827;
-  --color-text-secondary: #4b5563;
-  --color-accent: #2563eb;
-  --color-accent-hover: #1d4ed8;
-  --color-border: #e5e7eb;
-  --color-card: rgba(255,255,255,0.9);
+.theme-light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-card: #f3f4f6;
+  --border-color: #e5e7eb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --hover-bg: #e5e7eb;
 }
 
 /* Green theme */
-[data-theme="green"] {
-  --color-bg: #022c22;         /* deep emerald */
-  --color-bg-secondary: #064e3b;
-  --color-text: #d1fae5;
-  --color-text-secondary: #6ee7b7;
-  --color-accent: #10b981;    /* emerald-500 */
-  --color-accent-hover: #059669;
-  --color-border: #047857;
-  --color-card: rgba(6,78,59,0.8);
-}
-
-/* Blue/Ocean theme */
-[data-theme="blue"] {
-  --color-bg: #0c1929;
-  --color-bg-secondary: #1e3a5f;
-  --color-text: #e0f2fe;
-  --color-text-secondary: #7dd3fc;
-  --color-accent: #0ea5e9;
-  --color-accent-hover: #0284c7;
-  --color-border: #1e3a5f;
-  --color-card: rgba(30,58,95,0.8);
+.theme-green {
+  --bg-primary: #0b2b1e;
+  --bg-secondary: #0f3b2a;
+  --bg-card: rgba(15, 59, 42, 0.7);
+  --border-color: #1a5c3a;
+  --text-primary: #d1fae5;
+  --text-secondary: #a7f3d0;
+  --text-muted: #6ee7b7;
+  --accent: #10b981;
+  --accent-hover: #059669;
+  --nav-bg: rgba(11, 43, 30, 0.85);
+  --hover-bg: #164e35;
 }
 
 /* Purple theme */
-[data-theme="purple"] {
-  --color-bg: #1e0a2e;
-  --color-bg-secondary: #3b0764;
-  --color-text: #f3e8ff;
-  --color-text-secondary: #c084fc;
-  --color-accent: #a855f7;
-  --color-accent-hover: #9333ea;
-  --color-border: #581c87;
-  --color-card: rgba(59,7,100,0.8);
+.theme-purple {
+  --bg-primary: #0e001a;
+  --bg-secondary: #1a0033;
+  --bg-card: rgba(26, 0, 51, 0.6);
+  --border-color: #3b1f6e;
+  --text-primary: #f3e8ff;
+  --text-secondary: #c4b5fd;
+  --text-muted: #8b5cf6;
+  --accent: #a855f7;
+  --accent-hover: #9333ea;
+  --nav-bg: rgba(14, 0, 26, 0.85);
+  --hover-bg: #2e1065;
+}
+
+/* Ocean theme */
+.theme-ocean {
+  --bg-primary: #042f2e;
+  --bg-secondary: #0b3b3b;
+  --bg-card: rgba(11, 59, 59, 0.6);
+  --border-color: #0f766e;
+  --text-primary: #ccfbf1;
+  --text-secondary: #99f6e4;
+  --text-muted: #5eead4;
+  --accent: #2dd4bf;
+  --accent-hover: #14b8a6;
+  --nav-bg: rgba(4, 47, 46, 0.85);
+  --hover-bg: #115e59;
+}
+
+/* Sunset theme */
+.theme-sunset {
+  --bg-primary: #1e0f1c;
+  --bg-secondary: #2d1a2a;
+  --bg-card: rgba(45, 26, 42, 0.6);
+  --border-color: #7e2a4f;
+  --text-primary: #ffe4e6;
+  --text-secondary: #fda4af;
+  --text-muted: #fb7185;
+  --accent: #f43f5e;
+  --accent-hover: #e11d48;
+  --nav-bg: rgba(30, 15, 28, 0.85);
+  --hover-bg: #4a1d36;
+}
+
+/* Base body styles using variables */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, sans-serif;
+  margin: 0;
 }

@@ -1,61 +1,77 @@
 import { useState } from 'react';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import ThemeSwitcher from './ThemeSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   const links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[var(--color-bg)]/80 backdrop-blur-md border-b border-[var(--color-border)]">
+    <nav
+      className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b"
+      style={{
+        backgroundColor: 'var(--nav-bg)',
+        borderColor: 'var(--border-color)',
+      }}
+    >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold bg-gradient-to-r from-[var(--color-accent)] to-emerald-400 bg-clip-text text-transparent">
+        <a
+          href="#home"
+          className="text-xl font-bold"
+          style={{ color: 'var(--accent)' }}
+        >
           YourName
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-6">
-          <ul className="flex gap-8 text-sm font-medium text-[var(--color-text-secondary)]">
-            {links.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="hover:text-[var(--color-text)] transition-colors"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ThemeSwitcher />
-        </div>
+        <ul className="hidden md:flex gap-8 text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>
+          {links.map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="hover:text-[var(--text-primary)] transition-colors"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl text-[var(--color-text-secondary)]"
-          aria-label="Toggle menu"
-        >
-          {open ? <HiX /> : <HiMenuAlt3 />}
-        </button>
+        {/* Right side: theme toggle + mobile menu button */}
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden text-2xl"
+            style={{ color: 'var(--text-secondary)' }}
+            aria-label="Toggle menu"
+          >
+            {open ? <HiX /> : <HiMenuAlt3 />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="md:hidden bg-[var(--color-bg-secondary)] border-t border-[var(--color-border)] px-4 py-4 space-y-3">
+        <div
+          className="md:hidden px-4 py-4 space-y-3 border-t"
+          style={{
+            backgroundColor: 'var(--bg-secondary)',
+            borderColor: 'var(--border-color)',
+          }}
+        >
           {links.map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={() => setOpen(false)}
-              className="block text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
+              className="block transition-colors"
+              style={{ color: 'var(--text-secondary)' }}
             >
               {item}
             </a>
           ))}
-          <div className="pt-2">
-            <ThemeSwitcher />
-          </div>
         </div>
       )}
     </nav>
