@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import myImage from '../assets/img/my_photo.jpg'
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
           style={{ borderColor: 'var(--border-color)' }}
         >
           <img
-            src="../src/assets/img/my_photo.jpg"
+            src={myImage}
             alt="Bilikew Asratu"
             className="w-full h-full object-cover"
           />
