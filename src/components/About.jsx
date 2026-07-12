@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import myImage from '../assets/img/my_photo.jpg'
+import pdf_cv from '../assets/pdf/bilikew-asratu_cv.pdf'
 
 const About = () => {
   return (
@@ -46,7 +47,7 @@ const About = () => {
 
           <div className="mt-8 flex gap-4">
             <a
-              href="../src/assets/pdf/bilikew-asratu_cv.pdf"
+              href={pdf_cv}
               download
               className="px-5 py-2.5 rounded-full text-sm font-medium transition-colors"
               style={{ backgroundColor: 'var(--hover-bg)', color: 'var(--text-primary)' }}
