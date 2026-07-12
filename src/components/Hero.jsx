@@ -18,14 +18,14 @@ const Hero = () => {
         </p>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           <span style={{ color: 'var(--accent)' }}>
-            Your Full Name
+            Bilikew Asratu
           </span>
         </h1>
         <p
           className="max-w-2xl mx-auto text-lg md:text-xl mb-10 leading-relaxed"
           style={{ color: 'var(--text-secondary)' }}
         >
-          Full‑Stack Developer & Business Workflow Expert — I turn complex
+          Full‑Stack Developer & IT Support Workflow Expert — I turn complex
           data into elegant, automated solutions.
         </p>
 

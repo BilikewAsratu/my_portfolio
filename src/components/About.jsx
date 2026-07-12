@@ -10,14 +10,13 @@ const About = () => {
         transition={{ duration: 0.6 }}
         className="grid md:grid-cols-2 gap-12 items-center"
       >
-        {/* Replace with your photo */}
         <div
           className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2"
           style={{ borderColor: 'var(--border-color)' }}
         >
           <img
-            src="/your-photo.jpg"
-            alt="Your Name"
+            src="../src/assets/img/my_photo.jpg"
+            alt="Bilikew Asratu"
             className="w-full h-full object-cover"
           />
           <div
@@ -46,7 +45,7 @@ const About = () => {
 
           <div className="mt-8 flex gap-4">
             <a
-              href="/resume.pdf"
+              href="../src/assets/pdf/bilikew-asratu_cv.pdf"
               download
               className="px-5 py-2.5 rounded-full text-sm font-medium transition-colors"
               style={{ backgroundColor: 'var(--hover-bg)', color: 'var(--text-primary)' }}

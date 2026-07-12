@@ -21,7 +21,7 @@ const Navbar = () => {
           className="text-xl font-bold"
           style={{ color: 'var(--accent)' }}
         >
-          YourName
+          Bilikew.A
         </a>
 
         {/* Desktop links */}
