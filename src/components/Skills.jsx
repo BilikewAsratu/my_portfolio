@@ -2,47 +2,57 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Frontend Development',
     items: [
-      { name: 'HTML5', icon: '🟧' },
-      { name: 'CSS3', icon: '🟦' },
-      { name: 'JavaScript', icon: '🟨' },
-      { name: 'React', icon: '⚛️' },
-      { name: 'Tailwind', icon: '🌊' },
+      { name: 'HTML'},
+      { name: 'CSS'},
+      { name: 'JavaScript'},
+      { name: 'React Js'},
+      { name: 'Tailwind'},
+      {name: 'Bootstrap css'},
     ],
   },
   {
-    title: 'Backend',
+    title: 'Backend Development',
     items: [
-      { name: 'PHP', icon: '🐘' },
-      { name: 'Express.js', icon: '🚂' },
-      { name: 'REST APIs', icon: '🔗' },
+      { name: 'PHP'},
+      { name: 'Express.js'},
+      { name: 'REST APIs'},
     ],
   },
   {
     title: 'Languages',
     items: [
-      { name: 'Java', icon: '☕' },
-      { name: 'Python', icon: '🐍' },
-      { name: 'C++', icon: '⚙️' },
+      { name: 'Java'},
+      { name: 'Python'},
+      { name: 'C++'},
     ],
   },
   {
     title: 'Tools & Platforms',
     items: [
-      { name: 'Git', icon: '🔀' },
-      { name: 'GitHub', icon: '🐙' },
-      { name: 'Postman', icon: '📮' },
-      { name: 'VS Code', icon: '💻' },
+      { name: 'Git'},
+      { name: 'GitHub'},
+      { name: 'Postman'},
+      { name: 'VS Code'},
     ],
   },
   {
     title: 'Office & Automation',
     items: [
-      { name: 'Excel (Advanced)', icon: '📊' },
-      { name: 'Word', icon: '📄' },
-      { name: 'PowerPoint', icon: '📽️' },
-      { name: 'Power Automate', icon: '⚡' },
+      { name: 'Excel (Advanced)'},
+      { name: 'Word'},
+      { name: 'PowerPoint'},
+      { name: 'Power Automate'},
+    ],
+  },
+  {
+    title: 'IT Support & Adminstration',
+    items: [
+      { name: 'IT Support'},
+      { name: 'System Admin'},
+      { name: 'Telecom Networking'},
+      { name: 'Networking'},
     ],
   },
 ];
@@ -81,7 +91,6 @@ const Skills = () => {
                     className="flex items-center gap-2 px-3 py-1.5 rounded-full text-sm"
                     style={{ backgroundColor: 'var(--hover-bg)', color: 'var(--text-secondary)' }}
                   >
-                    <span className="text-lg">{skill.icon}</span>
                     <span>{skill.name}</span>
                   </div>
                 ))}
